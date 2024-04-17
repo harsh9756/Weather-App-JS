@@ -37,13 +37,13 @@ const getWeather = async (e) => {
             if (result.cloud_pct < 10) {
                 image.src = "images/clear.png"
             }
-            if (result.cloud_pct < 30 && result.cloud_pct > 10) {
+            if (result.cloud_pct <=30 && result.cloud_pct > 10) {
                 image.src = "images/clouds.png"
             }
-            if (result.cloud_pct < 50 && result.cloud_pct > 30) {
+            if (result.cloud_pct <=50 && result.cloud_pct > 30) {
                 image.src = "images/drizzle.png"
             }
-            if (result.cloud_pct < 70 && result.cloud_pct > 50) {
+            if (result.cloud_pct <= 70 && result.cloud_pct > 50) {
                 image.src = "images/mist.png"
             }
             if (result.cloud_pct > 70) {
